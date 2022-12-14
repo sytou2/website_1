@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all .5s linear;
+    font-family: 'Cairo', sans-serif;
+    text-transform: capitalize;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.2);
+    object-fit: cover;
+}
+.navigation{
+    position: absolute;
+    top: 0;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: var(--ylow);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--ylow);
+}
+
+::placeholder {
+    color: var(--ylow);
+}
+input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(139, 139, 139, 0.2);
+    color: var(--white);
+}
+.log{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_input{
+    position: relative;
+    display: grid;
+    box-shadow: 5px 5px 30px var(--mov2);
+    width: 81vh;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.btn button{
+    margin: 0;
+    padding: 4px;
+    font-weight: 700;
+    background-color: var(--mov);
+    outline: none;
+    border: none;
+    color: var(--ylow);
+    width: 40%;
+}
+.sign_in.active{
+    background-color: var(--ylow);
+    color: var(--mov);
+}
+.registration_btn.active{
+    background-color: var(--ylow);
+    color: var(--mov);
+}
+form{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    padding: 10px 0;
+    overflow: hidden;
+    
+}
+form div {
+    position: relative;
+    width: 100%;
+   
+}
+.log_in.active {
+display: block;
+}
+.log_in{
+    display: none;
+}
+.log_in input{
+    width: 100%;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 3px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.log_in .box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.log_in .box .cheack{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: var(--ylow);
+    font-weight: 600;   
+}
+.log_in .box .cheack input{
+    padding: 2px;
+    margin: 10px;
+    width: 14px;
+}
+
+.log_in .box input{
+    font-size: 1em;
+    padding: 0 10px;
+    margin: 0;
+    width: 60px;
+    background-color: var(--mov);
+    color: var(--white);
+    cursor: pointer;
+}
+.registration{
+    display: none;
+    padding: 10px 0;
+}
+.registration.active{
+    display: block;
+}
+.registration .reg_inp input{
+    width: 100%;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.3em;
+    margin: 3px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.registration .gender_inp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registration .gender_inp span{
+    font-size: 1.1em;
+    color: var(--ylow);
+    padding: 0 10px;
+}
+.registration .box{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.registration .box input{
+    padding: 0 15px;
+    background-color: var(--mov);
+    border: none;
+    color: var(--ylow);
+    font-weight: 800;
+    border-radius: 10px;
+}
+@media (max-width:991px){
+    .log{
+       
+        top: 245px;
+    }
+    .box_input {
+        width: 41vh;
+    }
+}
+@media (max-width:768px){
+    
+    .log {
+        top: 160px;
+    }
+}
